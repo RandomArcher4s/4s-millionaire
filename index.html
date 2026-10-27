@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070c23">
+<title>Iberia Millionaire — 4Story Quiz</title>
+<link rel="stylesheet" href="css/style.css?v=custom-start-next-validation-20261027">
+<style id="social-colors-hard-fix">
+
+/* FINAL SOCIAL COLORS — explicit scoped rules, equal buttons, fixed order. */
+html body .support-project-bar {
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,232px)) !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:10px !important;
+  width:100% !important;
+  max-width:none !important;
+  margin:0 auto !important;
+  padding:8px 12px !important;
+}
+html body .support-project-bar > a.support-project-link {
+  box-sizing:border-box !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  flex:none !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:none !important;
+  height:48px !important;
+  min-height:48px !important;
+  padding:0 14px !important;
+  gap:7px !important;
+  border-radius:10px !important;
+  font:800 13px/1.15 'Trebuchet MS',Arial,sans-serif !important;
+  letter-spacing:0 !important;
+  white-space:nowrap !important;
+  text-decoration:none !important;
+  color:#fff !important;
+  text-shadow:none !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.24),0 5px 15px rgba(0,0,0,.24) !important;
+  transition:filter .16s,transform .16s !important;
+}
+html body .support-project-bar > a#discordCommunityLink {
+  order:1 !important;
+  background:#5865F2 !important;
+  background-image:linear-gradient(120deg,#6576fb,#5865f2 65%,#4854cd) !important;
+  border:1px solid #8692ff !important;
+}
+html body .support-project-bar > a#supportProjectLink {
+  order:2 !important;
+  grid-column:auto !important;
+  background:#A57930 !important;
+  background-image:linear-gradient(120deg,#b68a40,#986a26 70%,#80571f) !important;
+  border:1px solid #d9ae61 !important;
+}
+html body .support-project-bar > a#youtubeChannelLink {
+  order:3 !important;
+  background:#E51C31 !important;
+  background-image:linear-gradient(120deg,#f32b3c,#dd182d 65%,#bb1024) !important;
+  border:1px solid #ff6678 !important;
+}
+html body .support-project-bar > a.support-project-link:hover {
+  filter:brightness(1.1) !important;
+  transform:translateY(-1px) !important;
+  color:#fff !important;
+}
+html body .support-project-bar > a.support-project-link > span[id] {
+  flex:1 1 auto !important;
+  min-width:0 !important;
+  text-align:center !important;
+}
+html body .support-project-bar .social-icon {
+  flex:0 0 19px !important;
+  width:19px !important;
+  height:19px !important;
+  color:white !important;
+}
+html body .support-project-bar .support-project-heart {
+  flex:0 0 19px !important;
+  width:19px !important;
+  font-size:17px !important;
+  line-height:19px !important;
+  text-align:center !important;
+  color:#fff !important;
+}
+html body .support-project-bar .support-project-arrow {
+  flex:0 0 12px !important;
+  margin-left:0 !important;
+  color:rgba(255,255,255,.94) !important;
+  font-size:13px !important;
+}
+@media(max-width:700px){
+  html body .support-project-bar{grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:7px !important;padding:6px 5px !important;}
+  html body .support-project-bar > a.support-project-link{height:43px !important;min-height:43px !important;padding:0 7px !important;gap:4px !important;font-size:clamp(8px,2.2vw,11px) !important;}
+  html body .support-project-bar .social-icon{width:15px !important;height:15px !important;flex-basis:15px !important;}
+  html body .support-project-bar .support-project-heart{width:15px !important;flex-basis:15px !important;font-size:14px !important;line-height:15px !important;}
+  html body .support-project-bar .support-project-arrow{display:none !important;}
+}
+@media(max-width:360px){
+  html body .support-project-bar{grid-template-columns:minmax(0,240px) !important;gap:8px !important;}
+  html body .support-project-bar > a.support-project-link{font-size:12px !important;height:44px !important;min-height:44px !important;}
+  html body .support-project-bar .support-project-arrow{display:inline !important;}
+}
+
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="creator-credit">by <a href="https://www.youtube.com/@RandomArcher4Story" target="_blank" rel="noopener noreferrer" title="RandomArcher on YouTube">RandomArcher <span aria-hidden="true">↗</span></a></div>
+  <header class="topbar">
+    <div class="brand"><div class="shield"><img src="assets/images/iberian-millionaire-logo.png" alt="Iberian Millionaire" class="brand-logo small-round"></div><div><div id="brandSmall" class="brand-small">4STORY · FAN QUIZ</div><div id="brandName" class="brand-name">IBERIA MILLIONAIRE</div></div></div>
+    <div class="top-actions"><div class="language-switch" role="group" aria-label="Language" id="languageSwitch"><span class="language-label" id="languageLabel">Language</span><button type="button" class="lang-btn" data-lang="en" aria-pressed="true" title="English">EN</button><button type="button" class="lang-btn" data-lang="ru" aria-pressed="false" title="Русский">RU</button><button type="button" class="lang-btn" data-lang="de" aria-pressed="false" title="Deutsch">DE</button><button type="button" class="lang-btn" data-lang="it" aria-pressed="false" title="Italiano">IT</button><button type="button" class="lang-btn" data-lang="el" aria-pressed="false" title="Ελληνικά">EL</button></div><button id="mobileSettingsToggle" class="mobile-settings-toggle" type="button" onclick="toggleMobileSettings()" aria-expanded="false">⚙︎</button><button id="rulesBtn" class="top-btn" type="button">Rules</button><button id="soundBtn" class="top-btn" type="button">♪ Effects: on</button><button id="effectSettingsBtn" class="top-btn" type="button" aria-controls="effectSettings" aria-expanded="false">🎚 Sound volumes</button><div class="music-controls"><button id="musicBtn" class="top-btn music-toggle" type="button" aria-pressed="true">♫ Music: on</button><label class="music-volume-label" for="musicVolume"><span id="volumeIcon" aria-hidden="true">◖))</span><input id="musicVolume" type="range" min="0" max="100" step="1" value="42" aria-label="Music volume"></label></div><button id="fullBtn" class="top-btn" type="button">⛶ Fullscreen</button><button id="restartBtn" class="top-btn primary" type="button">↻ New game</button></div>
+  </header>
+   <section id="effectSettings" class="effect-settings" aria-labelledby="effectSettingsTitle" hidden>
+    <div class="effect-settings-head"><h3 id="effectSettingsTitle">Sound volumes</h3><button id="effectSettingsClose" class="top-btn" type="button" aria-label="Close">✕</button></div>
+    <div class="effect-settings-grid">
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectRightLabel" for="effectRight">Correct answer</label><output id="effectRightOutput" for="effectRight">100%</output></div><input id="effectRight" type="range" min="0" max="100" step="1" value="100"><button class="effect-channel-preview" type="button" data-preview="right">▶ Preview</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectWrongLabel" for="effectWrong">Wrong answer</label><output id="effectWrongOutput" for="effectWrong">100%</output></div><input id="effectWrong" type="range" min="0" max="100" step="1" value="100"><button class="effect-channel-preview" type="button" data-preview="wrong">▶ Preview</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectWinLabel" for="effectWin">Final victory</label><output id="effectWinOutput" for="effectWin">100%</output></div><input id="effectWin" type="range" min="0" max="100" step="1" value="100"><button class="effect-channel-preview" type="button" data-preview="win">▶ Preview</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectUiLabel" for="effectUi">Clicks and selection</label><output id="effectUiOutput" for="effectUi">100%</output></div><input id="effectUi" type="range" min="0" max="100" step="1" value="100"><button class="effect-channel-preview" type="button" data-preview="ui">▶ Preview</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectFiftyLabel" for="effectFifty">50/50 lifeline</label><output id="effectFiftyOutput" for="effectFifty">75%</output></div><input id="effectFifty" type="range" min="0" max="100" step="1" value="75"><button class="effect-channel-preview" type="button" data-preview="fifty">▶ Preview</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectAudienceLabel" for="effectAudience">Ask the audience</label><output id="effectAudienceOutput" for="effectAudience">75%</output></div><input id="effectAudience" type="range" min="0" max="100" step="1" value="75"><button class="effect-channel-preview" type="button" data-preview="audience">▶ Preview</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectFriendLabel" for="effectFriend">Phone a friend</label><output id="effectFriendOutput" for="effectFriend">75%</output></div><input id="effectFriend" type="range" min="0" max="100" step="1" value="75"><button class="effect-channel-preview" type="button" data-preview="friend">▶ Preview</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectExtraLabel" for="effectExtra">Extra life</label><output id="effectExtraOutput" for="effectExtra">75%</output></div><input id="effectExtra" type="range" min="0" max="100" step="1" value="75"><button class="effect-channel-preview" type="button" data-preview="extra">▶ Preview</button></div>
+    </div>
+    <p id="effectSettingsNote" class="effect-settings-note">These volumes are independent of background music. Settings are saved in your browser.</p>
+   </section>
+   <div class="grid"><main class="main-panel" id="stage" aria-live="polite"></main><aside class="sidebar" id="prizeSidebar"><button class="mobile-ladder-toggle" type="button" onclick="toggleMobileLadder()" aria-expanded="false"><span id="mobileLadderSummary">🏆 18 / 18 · 500 Golds</span><span class="mobile-ladder-arrow">⌄</span></button><div id="sidebarTitle" class="sidebar-title">Лестница наград</div><div id="ladder" class="ladder"></div><div id="sidebarFooter" class="sidebar-footer">Несгораемая сумма: <b>0 Golds</b> 🪙<br>Выбери дополнительную сумму в главном меню до начала игры.</div></aside></div>
+  <nav class="support-project-bar" aria-label="Community links"><a class="support-project-link social-link-discord" id="discordCommunityLink" href="https://discord.gg/hqTYSaqNTn" target="_blank" rel="noopener noreferrer"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Discord"><path fill="currentColor" d="M20.317 4.369A19.791 19.791 0 0 0 15.444 2.8a13.968 13.968 0 0 0-.623 1.276 18.327 18.327 0 0 0-5.644 0A13.37 13.37 0 0 0 8.554 2.8a19.736 19.736 0 0 0-4.875 1.573C.597 8.938-.238 13.39.179 17.78a19.94 19.94 0 0 0 5.993 3.025c.48-.657.91-1.35 1.28-2.075a12.9 12.9 0 0 1-2.019-.97c.17-.123.336-.253.498-.387a14.062 14.062 0 0 0 12.14 0c.163.134.33.264.498.387-.65.384-1.326.71-2.02.971.37.724.799 1.418 1.28 2.074a19.909 19.909 0 0 0 5.995-3.025c.49-5.09-.838-9.501-3.507-13.411ZM8.02 15.317c-1.185 0-2.157-1.086-2.157-2.418 0-1.333.95-2.419 2.157-2.419 1.218 0 2.178 1.097 2.157 2.419 0 1.332-.96 2.418-2.157 2.418Zm7.96 0c-1.186 0-2.158-1.086-2.158-2.418 0-1.333.951-2.419 2.158-2.419 1.218 0 2.178 1.097 2.157 2.419 0 1.332-.95 2.418-2.157 2.418Z"/></svg><span id="discordCommunityLabel">Our Discord</span><span class="support-project-arrow" aria-hidden="true">↗</span></a><a class="support-project-link" id="supportProjectLink" href="https://www.donationalerts.com/r/randomarcher" target="_blank" rel="noopener noreferrer"><span aria-hidden="true" class="support-project-heart">♥</span><span id="supportProjectLabel">Support the project</span><span class="support-project-arrow" aria-hidden="true">↗</span></a><a class="support-project-link social-link-youtube" id="youtubeChannelLink" href="https://www.youtube.com/@RandomArcher4Story" target="_blank" rel="noopener noreferrer"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="YouTube"><path fill="currentColor" d="M23.498 6.186a3.01 3.01 0 0 0-2.117-2.132C19.517 3.55 12 3.55 12 3.55s-7.517 0-9.381.504A3.01 3.01 0 0 0 .502 6.186 31.148 31.148 0 0 0 0 12a31.148 31.148 0 0 0 .502 5.814 3.01 3.01 0 0 0 2.117 2.132C4.483 20.45 12 20.45 12 20.45s7.517 0 9.381-.504a3.01 3.01 0 0 0 2.117-2.132A31.148 31.148 0 0 0 24 12a31.148 31.148 0 0 0-.502-5.814ZM9.545 15.568V8.432L15.818 12l-6.273 3.568Z"/></svg><span id="youtubeChannelLabel">YouTube</span><span class="support-project-arrow" aria-hidden="true">↗</span></a></nav>
+  <div id="footer" class="footer">Questions cover classic 4Story and its official lore. PvP rules can vary by server. Independent fan game, not affiliated with the rights holders.</div>
+</div>
+<dialog id="episodeVideoDialog" class="episode-player-modal" aria-label="Episode 1 — YouTube">
+  <div class="episode-dialog-top"><strong data-video-title>Episode 1</strong><button type="button" class="episode-close" data-video-close onclick="closeEpisodeVideo()">Close ✕</button></div>
+  <div id="episodeVideoFrame" class="episode-iframe-holder"></div>
+  <div class="episode-dialog-foot"><span data-video-help></span> <a data-video-link href="https://www.youtube.com/watch?v=SFBH_nonuQ4" target="_blank" rel="noopener noreferrer">YouTube</a></div>
+</dialog>
+<div id="modalRoot"></div>
+<div id="editorRoot"></div>
+<script id="customGamePayload" type="application/json"></script>
+<!-- Embedded audio supplied by the user; the quiz remains a single offline HTML file. -->
+<audio id="backgroundTrack0" loop preload="none" aria-hidden="true" src="assets/audio/01-main-theme.mp3"></audio>
+<audio id="backgroundTrack1" loop preload="none" aria-hidden="true" src="assets/audio/questions-01-08.mp3"></audio>
+<audio id="backgroundTrack2" loop preload="none" aria-hidden="true" src="assets/audio/questions-09-14.mp3"></audio>
+<audio id="backgroundTrack3" loop preload="none" aria-hidden="true" src="assets/audio/questions-15-18.mp3"></audio>
+
+<audio id="resultSoundWrong" preload="auto" aria-hidden="true" src="assets/audio/wrong-answer.mp3"></audio>
+<audio id="resultSoundRight" preload="auto" aria-hidden="true" src="assets/audio/correct-answer.mp3"></audio>
+<audio id="resultSoundWin" preload="auto" aria-hidden="true" src="assets/audio/final-win.mp3"></audio>
+
+<!-- Lifeline soundtracks uploaded by RandomArcher; fully offline. -->
+<!-- One-use Extra Life lifeline cue supplied by RandomArcher. -->
+<audio id="lifelineSoundExtra" preload="auto" src="assets/audio/extra-life.mp3"></audio>
+<audio id="lifelineSoundFifty" preload="none" aria-hidden="true" src="assets/audio/fifty-fifty.mp3"></audio>
+<audio id="lifelineSoundAudience" loop preload="none" aria-hidden="true" src="assets/audio/audience-poll.mp3"></audio>
+<audio id="lifelineSoundFriend" loop preload="none" aria-hidden="true" src="assets/audio/phone-friend.mp3"></audio>
+<script defer src="js/game.js?v=custom-start-next-validation-20261027"></script>
+</body>
+</html>
