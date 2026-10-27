@@ -729,3 +729,49 @@ html body .support-project-bar .support-project-arrow {
 .custom-editor .ce-status-error{color:#ffb3c4;font-weight:900}
 .custom-editor #editorNext{opacity:1;cursor:pointer;border-color:#dcb05e;background:linear-gradient(145deg,#f9d887,#bf8431);color:#101c38;min-width:100px}
 .main-panel.is-intro .intro-start{font-weight:900}
+
+
+/* Custom-game editor: explicit save action, aligned on the far right. */
+.custom-editor-tools .save-browser{
+  order:99;
+  margin-left:auto;
+  min-width:156px;
+  min-height:46px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap;
+  transition:transform .15s ease,box-shadow .2s ease,filter .18s ease;
+  background:linear-gradient(120deg,#146550,#19836a)!important;
+  border:1px solid #65c8a5!important;
+  color:#fff!important;
+  box-shadow:0 5px 15px #0d473c5e;
+}
+.custom-editor-tools .save-browser:hover:not(:disabled){
+  transform:translateY(-2px);
+  box-shadow:0 7px 20px rgba(57,212,156,.34);
+  filter:brightness(1.1);
+}
+.custom-editor-tools .save-browser:active{transform:scale(.95)}
+.custom-editor-tools .save-browser.is-saved,
+.custom-editor-tools .save-browser.is-saved:hover{
+  background:linear-gradient(110deg,#149a62,#21c780)!important;
+  border-color:#91ffcf!important;
+  box-shadow:0 0 0 2px rgba(133,252,193,.2),0 0 22px rgba(74,244,152,.45)!important;
+  color:#fff!important;
+}
+.custom-editor-tools .save-browser.save-error{background:#8a2943!important;border-color:#ff9db5!important}
+.custom-editor-tools .save-browser.save-pop{animation:customSaveFlash .55s cubic-bezier(.18,.85,.25,1)}
+.custom-editor-footer .custom-editor-state.ce-status-visible{color:#75f5b8;font-weight:900}
+.custom-editor-footer .custom-editor-state.ce-status-error{color:#ffb3c4}
+@keyframes customSaveFlash{
+  0%{transform:scale(.94)}
+  45%{transform:scale(1.085)}
+  100%{transform:scale(1)}
+}
+@media(max-width:540px){
+  .custom-editor-tools .save-browser{width:100%;flex-basis:100%;margin-left:0;order:99}
+}
+@media(prefers-reduced-motion:reduce){
+  .custom-editor-tools .save-browser.save-pop{animation:none}
+}
