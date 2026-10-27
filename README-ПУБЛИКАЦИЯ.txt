@@ -14,3 +14,5 @@
 Публичные музыка и изображения: проверьте права на опубликованные треки и изображения.
 
 Структура: index.html + css/style.css + js/game.js + assets/images + assets/audio. Серверная часть и сборка не нужны.
+
+Language setting: the site opens in English for first-time visitors. The language selector is EN, RU, DE, IT, EL. Returning visitors keep the language they selected previously in that browser.
