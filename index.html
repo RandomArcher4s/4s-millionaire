@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070c23">
+<title>Миллион Иберии — викторина по 4Story</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="frame">
+  <div class="creator-credit">by <a href="https://www.youtube.com/@RandomArcher4Story" target="_blank" rel="noopener noreferrer" title="RandomArcher on YouTube">RandomArcher <span aria-hidden="true">↗</span></a></div>
+  <header class="topbar">
+    <div class="brand"><div class="shield"><img src="assets/images/iberian-millionaire-logo.png" alt="Iberian Millionaire" class="brand-logo small-round"></div><div><div id="brandSmall" class="brand-small">4STORY · ФАНАТСКАЯ ВИКТОРИНА</div><div id="brandName" class="brand-name">МИЛЛИОН ИБЕРИИ</div></div></div>
+    <div class="top-actions"><div class="language-switch" role="group" aria-label="Выбор языка" id="languageSwitch"><span class="language-label" id="languageLabel">Язык</span><button type="button" class="lang-btn" data-lang="ru" aria-pressed="true" title="Русский">RU</button><button type="button" class="lang-btn" data-lang="en" aria-pressed="false" title="English">EN</button><button type="button" class="lang-btn" data-lang="de" aria-pressed="false" title="Deutsch">DE</button><button type="button" class="lang-btn" data-lang="it" aria-pressed="false" title="Italiano">IT</button><button type="button" class="lang-btn" data-lang="el" aria-pressed="false" title="Ελληνικά">EL</button></div><button id="mobileSettingsToggle" class="mobile-settings-toggle" type="button" onclick="toggleMobileSettings()" aria-expanded="false">⚙︎</button><button id="rulesBtn" class="top-btn" type="button">Правила</button><button id="soundBtn" class="top-btn" type="button">♪ Эффекты: вкл.</button><button id="effectSettingsBtn" class="top-btn" type="button" aria-controls="effectSettings" aria-expanded="false">🎚 Громкость звуков</button><div class="music-controls"><button id="musicBtn" class="top-btn music-toggle" type="button" aria-pressed="true">♫ Музыка: вкл.</button><label class="music-volume-label" for="musicVolume"><span id="volumeIcon" aria-hidden="true">◖))</span><input id="musicVolume" type="range" min="0" max="100" step="1" value="42" aria-label="Громкость музыки"></label></div><button id="fullBtn" class="top-btn" type="button">⛶ Полный экран</button><button id="restartBtn" class="top-btn primary" type="button">↻ Новая игра</button></div>
+  </header>
+   <section id="effectSettings" class="effect-settings" aria-labelledby="effectSettingsTitle" hidden>
+    <div class="effect-settings-head"><h3 id="effectSettingsTitle">Громкость звуков</h3><button id="effectSettingsClose" class="top-btn" type="button" aria-label="Закрыть">✕</button></div>
+    <div class="effect-settings-grid">
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectRightLabel" for="effectRight">Правильный ответ</label><output id="effectRightOutput" for="effectRight">100%</output></div><input id="effectRight" type="range" min="0" max="100" step="1" value="100"><button class="effect-channel-preview" type="button" data-preview="right">▶ Проверить</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectWrongLabel" for="effectWrong">Неправильный ответ</label><output id="effectWrongOutput" for="effectWrong">100%</output></div><input id="effectWrong" type="range" min="0" max="100" step="1" value="100"><button class="effect-channel-preview" type="button" data-preview="wrong">▶ Проверить</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectWinLabel" for="effectWin">Финальная победа</label><output id="effectWinOutput" for="effectWin">100%</output></div><input id="effectWin" type="range" min="0" max="100" step="1" value="100"><button class="effect-channel-preview" type="button" data-preview="win">▶ Проверить</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectUiLabel" for="effectUi">Нажатия и выбор</label><output id="effectUiOutput" for="effectUi">100%</output></div><input id="effectUi" type="range" min="0" max="100" step="1" value="100"><button class="effect-channel-preview" type="button" data-preview="ui">▶ Проверить</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectFiftyLabel" for="effectFifty">Подсказка 50/50</label><output id="effectFiftyOutput" for="effectFifty">75%</output></div><input id="effectFifty" type="range" min="0" max="100" step="1" value="75"><button class="effect-channel-preview" type="button" data-preview="fifty">▶ Проверить</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectAudienceLabel" for="effectAudience">Помощь зала</label><output id="effectAudienceOutput" for="effectAudience">75%</output></div><input id="effectAudience" type="range" min="0" max="100" step="1" value="75"><button class="effect-channel-preview" type="button" data-preview="audience">▶ Проверить</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectFriendLabel" for="effectFriend">Звонок другу</label><output id="effectFriendOutput" for="effectFriend">75%</output></div><input id="effectFriend" type="range" min="0" max="100" step="1" value="75"><button class="effect-channel-preview" type="button" data-preview="friend">▶ Проверить</button></div>
+     <div class="effect-channel"><div class="effect-channel-top"><label id="effectExtraLabel" for="effectExtra">Дополнительная жизнь</label><output id="effectExtraOutput" for="effectExtra">75%</output></div><input id="effectExtra" type="range" min="0" max="100" step="1" value="75"><button class="effect-channel-preview" type="button" data-preview="extra">▶ Проверить</button></div>
+    </div>
+    <p id="effectSettingsNote" class="effect-settings-note">Громкость этих звуков не влияет на музыку. Настройки сохраняются в браузере.</p>
+   </section>
+   <div class="grid"><main class="main-panel" id="stage" aria-live="polite"></main><aside class="sidebar" id="prizeSidebar"><button class="mobile-ladder-toggle" type="button" onclick="toggleMobileLadder()" aria-expanded="false"><span id="mobileLadderSummary">🏆 18 / 18 · 500 Golds</span><span class="mobile-ladder-arrow">⌄</span></button><div id="sidebarTitle" class="sidebar-title">Лестница наград</div><div id="ladder" class="ladder"></div><div id="sidebarFooter" class="sidebar-footer">Несгораемая сумма: <b>0 Golds</b> 🪙<br>Выбери дополнительную сумму в главном меню до начала игры.</div></aside></div>
+  <div class="support-project-bar"><a class="support-project-link" id="supportProjectLink" href="https://www.donationalerts.com/r/randomarcher" target="_blank" rel="noopener noreferrer"><span aria-hidden="true" class="support-project-heart">♥</span><span id="supportProjectLabel">Поддержать проект</span><span class="support-project-arrow" aria-hidden="true">↗</span></a></div>
+  <div id="footer" class="footer">Вопросы по классической 4Story и официальному лору. Правила PvP на разных серверах могут отличаться. Независимая фанатская игра, не связанная с правообладателями.</div>
+</div>
+<dialog id="episodeVideoDialog" class="episode-player-modal" aria-label="Episode 1 — YouTube">
+  <div class="episode-dialog-top"><strong data-video-title>Episode 1</strong><button type="button" class="episode-close" data-video-close onclick="closeEpisodeVideo()">Закрыть ✕</button></div>
+  <div id="episodeVideoFrame" class="episode-iframe-holder"></div>
+  <div class="episode-dialog-foot"><span data-video-help></span> <a data-video-link href="https://www.youtube.com/watch?v=SFBH_nonuQ4" target="_blank" rel="noopener noreferrer">YouTube</a></div>
+</dialog>
+<div id="modalRoot"></div>
+<div id="editorRoot"></div>
+<script id="customGamePayload" type="application/json"></script>
+<!-- Embedded audio supplied by the user; the quiz remains a single offline HTML file. -->
+<audio id="backgroundTrack0" loop preload="none" aria-hidden="true" src="assets/audio/01-main-theme.mp3"></audio>
+<audio id="backgroundTrack1" loop preload="none" aria-hidden="true" src="assets/audio/questions-01-08.mp3"></audio>
+<audio id="backgroundTrack2" loop preload="none" aria-hidden="true" src="assets/audio/questions-09-14.mp3"></audio>
+<audio id="backgroundTrack3" loop preload="none" aria-hidden="true" src="assets/audio/questions-15-18.mp3"></audio>
+
+<audio id="resultSoundWrong" preload="auto" aria-hidden="true" src="assets/audio/wrong-answer.mp3"></audio>
+<audio id="resultSoundRight" preload="auto" aria-hidden="true" src="assets/audio/correct-answer.mp3"></audio>
+<audio id="resultSoundWin" preload="auto" aria-hidden="true" src="assets/audio/final-win.mp3"></audio>
+
+<!-- Lifeline soundtracks uploaded by RandomArcher; fully offline. -->
+<!-- One-use Extra Life lifeline cue supplied by RandomArcher. -->
+<audio id="lifelineSoundExtra" preload="auto" src="assets/audio/extra-life.mp3"></audio>
+<audio id="lifelineSoundFifty" preload="none" aria-hidden="true" src="assets/audio/fifty-fifty.mp3"></audio>
+<audio id="lifelineSoundAudience" loop preload="none" aria-hidden="true" src="assets/audio/audience-poll.mp3"></audio>
+<audio id="lifelineSoundFriend" loop preload="none" aria-hidden="true" src="assets/audio/phone-friend.mp3"></audio>
+<script defer src="js/game.js"></script>
+</body>
+</html>
